@@ -21,9 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/leeco/zl1/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
 
-PRODUCT_NAME := gzosp_zl1
+PRODUCT_NAME := validus_zl1
 PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
@@ -35,6 +35,7 @@ TARGET_VENDOR_DEVICE_NAME := le_zl1
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_zl1 PRODUCT_NAME=LePro3
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Adam Ovadia (oadam11)" \
     BUILD_FINGERPRINT=LeEco/le_zl1/LePro3:6.0.1/MMB29M/362280:user/release-keys \
     PRIVATE_BUILD_DESC="LePro3-user 6.0.1 MMB29M 24 dev-keys"
 
