@@ -1,0 +1,5 @@
+# We cant wait for all the patches be merged
+# so we pull the patches from gerrit.
+#
+66731 http://gerrit.aicp-rom.com vendor/aicp
+205403 https://review.lineageos.org hardware/qcom/power -f
